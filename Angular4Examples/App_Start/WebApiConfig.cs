@@ -19,6 +19,14 @@ namespace Angular4Examples
                 routeTemplate: "api/{controller}/{id}",
                 defaults: new { id = RouteParameter.Optional }
             );
+
+            // Single Page Application - Controller
+            config.Routes.MapHttpRoute(
+                name: "Default",
+                routeTemplate: "{*catchall}",
+                defaults: new { controller = "Spa" }
+            );
+
         }
     }
 }

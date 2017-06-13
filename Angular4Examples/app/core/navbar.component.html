@@ -6,8 +6,8 @@
 
     <div class="collapse navbar-collapse" id="containerNavbar">
         <ul class="navbar-nav mr-auto">
-            <li class="nav-item" *ngFor="let navElement in navElements" >
-                <a class="nav-link" [routelink]="navElement.link">{{navElement.name}}</a>
+            <li class="nav-item" *ngFor="let navElement of navElements" >
+                <a class="nav-link" [routerLink]="navElement.link">{{navElement.name}}</a>
             </li>
         </ul>
            

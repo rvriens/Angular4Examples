@@ -4,7 +4,7 @@ import { Component }          from '@angular/core';
   selector: 'my-app',
   template: `
     <div class="container">
-    <nav-bar></nav-bar>
+    <nav-bar [navElements]="[{link: '/dashboard', name: 'Dashboard'},{link: '/heroes', name: 'Heroes'}]"></nav-bar>
     <nav>
       <a routerLink="/dashboard" routerLinkActive="active">Dashboard</a>
       <a routerLink="/heroes" routerLinkActive="active">Heroes</a>

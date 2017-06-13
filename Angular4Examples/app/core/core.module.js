@@ -7,6 +7,10 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
+var router_1 = require("@angular/router");
+var platform_browser_1 = require("@angular/platform-browser");
+var forms_1 = require("@angular/forms");
+var http_1 = require("@angular/http");
 var navbar_component_1 = require("./navbar.component");
 var CoreModule = (function () {
     function CoreModule() {
@@ -15,8 +19,19 @@ var CoreModule = (function () {
 }());
 CoreModule = __decorate([
     core_1.NgModule({
+        imports: [
+            router_1.RouterModule,
+            platform_browser_1.BrowserModule,
+            forms_1.FormsModule,
+            http_1.HttpModule,
+        ],
         declarations: [navbar_component_1.NavBarComponent],
-        exports: [navbar_component_1.NavBarComponent]
+        exports: [
+            navbar_component_1.NavBarComponent,
+            platform_browser_1.BrowserModule,
+            forms_1.FormsModule,
+            http_1.HttpModule
+        ]
     })
 ], CoreModule);
 exports.CoreModule = CoreModule;

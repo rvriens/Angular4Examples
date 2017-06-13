@@ -2,7 +2,7 @@
     Component,
     Input
 } from '@angular/core';
-import { Subject } from 'rxjs'
+import { Subject } from 'rxjs/Subject';
 
 interface NavElement
 {
@@ -15,6 +15,5 @@ interface NavElement
     templateUrl: './navbar.component.html'
 })
 export class NavBarComponent {
-    @Input() navElements: Subject<NavElement[]>;
-
+    @Input() navElements: NavElement[]; //Subject<NavElement[]>;
 }

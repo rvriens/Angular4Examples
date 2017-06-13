@@ -10,7 +10,6 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
-var rxjs_1 = require("rxjs");
 var NavBarComponent = (function () {
     function NavBarComponent() {
     }
@@ -18,7 +17,7 @@ var NavBarComponent = (function () {
 }());
 __decorate([
     core_1.Input(),
-    __metadata("design:type", rxjs_1.Subject)
+    __metadata("design:type", Array)
 ], NavBarComponent.prototype, "navElements", void 0);
 NavBarComponent = __decorate([
     core_1.Component({

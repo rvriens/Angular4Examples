@@ -4,7 +4,14 @@
     <base href="/">
     <title>Angular Tour of Heroes</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- Disable cache -->
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+
     <link rel="stylesheet" href="styles.css">
+
     <!-- Polyfills -->
     <script src="node_modules/core-js/client/shim.min.js"></script>
     <script src="node_modules/zone.js/dist/zone.js"></script>
@@ -16,6 +23,9 @@
     <script src="/node_modules/tether/dist/js/tether.min.js"></script>
     <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+
+    
+
 
     <script>
       System.import('main.js').catch(function(err){ console.error(err); });

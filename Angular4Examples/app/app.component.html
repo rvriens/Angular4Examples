@@ -1,0 +1,13 @@
+﻿<nav-bar [navElements]="[{link: '/dashboard', name: 'Dashboard'},{link: '/heroes', name: 'Heroes'}]"></nav-bar>
+<div class="container">
+
+<!--
+    <nav>
+        <a routerLink="/dashboard" routerLinkActive="active">Dashboard</a>
+        <a routerLink="/heroes" routerLinkActive="active">Heroes</a>
+    </nav>
+-->
+
+    <h1>{{title}}</h1>
+    <router-outlet></router-outlet>
+</div>
